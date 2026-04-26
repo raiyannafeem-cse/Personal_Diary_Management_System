@@ -8,12 +8,12 @@ int main()
     char date[15],location[50],subject[100],description[10000],search[50],line[15000],input_pass[70];
     FILE *fp;
 
-  for(int i=1;i<=3;i++){
+  for(int i=1;i<=3;i++){ // MAXIMUM 3 ATTEMPTS AVAILABLE
       system("cls || clear");// NEW PAGE
       if(i!=1){
         printf("\nWrong PIN! Try Again.\n");
       }
-    printf("\nEnter PIN To Access: ");
+    printf("\nEnter PIN To Sign in: ");
     fgets(input_pass, sizeof(input_pass), stdin); // TAKING PIN AND CLEARING NEW LINE TO ENTER
     input_pass[strcspn(input_pass, "\n")] = '\0';
     if(strcmp(input_pass,"CSE115")==0){
