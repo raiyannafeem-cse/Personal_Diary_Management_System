@@ -123,10 +123,8 @@ int main()
     return 0;
    }
   }
-  if(strcmp(input_pass,"CSE115")!=0) {
     system("cls || clear");
     printf("\n  ====================== MY Diary ======================\n");
     printf("\n  Wrong PIN! Closing program...\n");// WRONG PASSWORD
     return 0;
-}
 }
